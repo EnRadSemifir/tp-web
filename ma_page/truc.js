@@ -16,3 +16,4 @@ const clicked = () => {
 document.querySelector('#boutton').addEventListener('click', clicked)
 
 
+console.log('je suis une nouvelle ligne')
