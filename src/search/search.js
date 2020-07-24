@@ -14,11 +14,9 @@ const renderUsers = () => {
         const tr = table.insertRow()
         for (key in user) {
             let cell = tr.insertCell()
-            let data = document.createTextNode(user[key])
-            cell.appendChild(data);
+            cell.innerHTML = user[key]
         }
     }
-
 }
 
 document.querySelector("#searchButton").addEventListener('click', searchUser)
